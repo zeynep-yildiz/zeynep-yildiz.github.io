@@ -1,1 +1,287 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuelSense - Fuel Tracking App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1976D2;
+            --secondary-color: #03A9F4;
+            --text-color: #333;
+            --background-color: #F5F5F5;
+            --card-background: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 24px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 48px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .app-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 16px;
+            border-radius: 24px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 500;
+        }
+
+        .language-toggle {
+            margin-top: 16px;
+        }
+
+        .language-toggle a {
+            text-decoration: none;
+            color: white;
+            margin: 0 8px;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .language-toggle a:hover {
+            opacity: 0.8;
+        }
+
+        .content {
+            margin-top: 48px;
+        }
+
+        .card {
+            background: var(--card-background);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 24px;
+            padding: 32px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .material-icons {
+            margin-right: 12px;
+            font-size: 28px;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        .app-store-link {
+            display: flex;
+            justify-content: center;
+            margin-top: 32px;
+        }
+
+        .app-store-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .app-store-button:hover {
+            background-color: #333;
+        }
+
+        .app-store-icon {
+            height: 32px;
+            margin-right: 12px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 48px;
+            font-style: italic;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px;
+            }
+
+            header {
+                padding: 32px 0;
+            }
+
+            .app-icon {
+                width: 80px;
+                height: 80px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="app-info">
+            <img src="https://raw.githubusercontent.com/zeynep-yildiz/zeynep-yildiz.github.io/refs/heads/main/fuelsense/img/appstore.png" width=120 height=120 alt="FuelSense Icon" class="app-icon">
+            <h1>FuelSense</h1>
+        </div>
+        <div class="language-toggle">
+            <a href="#en">English</a>
+            <a href="#tr">Türkçe</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="en">
+            <div class="content">
+                <div class="card">
+                    <h2><i class="material-icons">directions_car</i>Your Personal Fuel Tracking App</h2>
+                    <p>FuelSense is your ultimate companion for tracking and optimizing your vehicle's fuel consumption. With our intuitive interface and powerful features, you can:</p>
+                    <ul>
+                        <li>Log fuel fill-ups and track consumption</li>
+                        <li>Monitor fuel costs and expenses</li>
+                        <li>Analyze your carbon footprint</li>
+                        <li>Get insights to improve fuel efficiency</li>
+                        <li>Set reminders for maintenance and inspections</li>
+                    </ul>
+                    <p>Take control of your fuel consumption and make informed decisions about your driving habits with FuelSense.</p>
+                </div>
+
+                <div class="card">
+                    <h2><i class="material-icons">security</i>Privacy Policy</h2>
+                    <p>At FuelSense, we prioritize your privacy and data security. Our commitment to you includes:</p>
+                    <ul>
+                        <li>Collecting only essential information for app functionality</li>
+                        <li>Secure storage and encryption of your data</li>
+                        <li>No sharing of personal information with third parties</li>
+                        <li>Transparent use of Google AdMob for advertising purposes</li>
+                    </ul>
+                    <p>We strive to provide a safe and trustworthy environment for managing your fuel data.</p>
+                </div>
+
+                <div class="card">
+                    <h2><i class="material-icons">settings</i>User Privacy Options</h2>
+                    <p>We believe in giving you control over your data. With FuelSense, you can:</p>
+                    <ul>
+                        <li>Choose what personal information to provide</li>
+                        <li>Delete your data at any time within the app</li>
+                        <li>Opt-out of personalized ads through your device settings</li>
+                        <li>Request a copy of your data or its deletion</li>
+                    </ul>
+                    <p>Your privacy is in your hands, and we're here to support your choices.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="tr" style="display: none;">
+            <div class="content">
+                <div class="card">
+                    <h2><i class="material-icons">directions_car</i>Kişisel Yakıt Takip Uygulamanız</h2>
+                    <p>FuelSense, aracınızın yakıt tüketimini takip etmek ve optimize etmek için mükemmel bir yardımcıdır. Sezgisel arayüzümüz ve güçlü özelliklerimizle şunları yapabilirsiniz:</p>
+                    <ul>
+                        <li>Yakıt dolumlarını kaydedin ve tüketimi takip edin</li>
+                        <li>Yakıt maliyetlerini ve giderlerini izleyin</li>
+                        <li>Karbon ayak izinizi analiz edin</li>
+                        <li>Yakıt verimliliğini artırmak için içgörüler elde edin</li>
+                        <li>Bakım ve muayeneler için hatırlatıcılar ayarlayın</li>
+                    </ul>
+                    <p>FuelSense ile yakıt tüketiminizi kontrol altına alın ve sürüş alışkanlıklarınız hakkında bilinçli kararlar verin.</p>
+                </div>
+
+                <div class="card">
+                    <h2><i class="material-icons">security</i>Gizlilik Politikası</h2>
+                    <p>FuelSense'de gizliliğiniz ve veri güvenliğiniz önceliğimizdir. Size olan taahhüdümüz şunları içerir:</p>
+                    <ul>
+                        <li>Yalnızca uygulama işlevselliği için gerekli bilgileri toplama</li>
+                        <li>Verilerinizin güvenli depolanması ve şifrelenmesi</li>
+                        <li>Kişisel bilgilerin üçüncü taraflarla paylaşılmaması</li>
+                        <li>Reklam amaçlı Google AdMob kullanımında şeffaflık</li>
+                    </ul>
+                    <p>Yakıt verilerinizi yönetmek için güvenli ve güvenilir bir ortam sağlamaya çalışıyoruz.</p>
+                </div>
+
+                <div class="card">
+                    <h2><i class="material-icons">settings</i>Kullanıcı Gizlilik Seçenekleri</h2>
+                    <p>Verileriniz üzerinde size kontrol vermeye inanıyoruz. FuelSense ile şunları yapabilirsiniz:</p>
+                    <ul>
+                        <li>Hangi kişisel bilgileri sağlayacağınızı seçin</li>
+                        <li>Verilerinizi istediğiniz zaman uygulama içinden silin</li>
+                        <li>Cihaz ayarlarınızdan kişiselleştirilmiş reklamları devre dışı bırakın</li>
+                        <li>Verilerinizin bir kopyasını veya silinmesini talep edin</li>
+                    </ul>
+                    <p>Gizliliğiniz sizin ellerinizde, ve biz seçimlerinizi desteklemek için buradayız.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-store-link">
+            <a href="https://apps.apple.com/us/app/your-app-id" target="_blank" class="app-store-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" class="app-store-icon">
+                Download on the App Store
+            </a>
+        </div>
+
+        <div class="contact-info">
+            <p>For more information, please contact us at @Z3YNAx</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.language-toggle a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('en').style.display = this.getAttribute('href') === '#en' ? 'block' : 'none';
+                document.getElementById('tr').style.display = this.getAttribute('href') === '#tr' ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,254 +1,370 @@
 <!DOCTYPE html>
 <html lang="tr-TR">
 <head>
-    <script>
-        console.log("SİTE TASARIMI: Harvard Üniversitesi Profesörü, Sayın David J. Malan'a aittir! Sitesi: https://cs.harvard.edu/malan/");
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1NJK8WE0K"></script><script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          
-            gtag('config', 'G-R1NJK8WE0K');
-          </script>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
-    <meta property="og:description" content="Zeynep YILDIZ, Jr. iOS Geliştiricisi! Güncel projeleri ve blog yazıları için takip edin.">
-    <meta property="og:image" content="">
-    <meta property="og:title" content="Zeynep YILDIZ">
+    <title>Zeynep YILDIZ - Jr. iOS Geliştirici</title>
+
+    <!-- SEO Meta Etiketleri -->
+    <meta name="description" content="Zeynep YILDIZ, Jr. iOS Geliştiricisi. Güncel projeleri ve blog yazıları için takip edin.">
+    <meta name="author" content="Zeynep YILDIZ">
+    <meta name="keywords" content="Zeynep YILDIZ, iOS Geliştirici, Jr. iOS Geliştirici, Swift, iOS Uygulamaları">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Turkish">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zeynepyildiz.website/">
-    <meta name="description" content="Zeynep YILDIZ, Jr. iOS Geliştiricisi! Güncel projeleri ve blog yazıları için takip edin.">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="@Z3YNAx">
-    <meta name="twitter:description" content="Zeynep YILDIZ, Jr. iOS Geliştiricisi! Güncel projeleri ve blog yazıları için takip edin.">
-    <meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/1380425429144731650/1661458852/1500x500">
-    <meta name="twitter:site" content="@Z3YNAx">
-    <meta name="twitter:title" content="Zeynep YILDIZ">
+    <meta property="og:title" content="Zeynep YILDIZ - Jr. iOS Geliştirici">
+    <meta property="og:description" content="Zeynep YILDIZ, Jr. iOS Geliştiricisi. Güncel projeleri ve blog yazıları için takip edin.">
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1562897817689112576/pbeWfDXk_400x400.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://zeynepyildiz.website/">
-    <meta name="author" content="Zeynep YILDIZ">
-    <meta name="robots" content="index, follow">
-    <meta name="keywords" content="Zeynep YILDIZ, iOS Geliştirici, Jr. iOS Geliştirici">
-    <meta name="revisit-after" content="1 days">
-    <meta name="language" content="Turkish">
-    <link href="https://st2.depositphotos.com/3867453/8105/v/950/depositphotos_81057948-stock-illustration-letter-z-number-2-logo.jpg" rel="icon">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,700&display=swap" rel="stylesheet">
-    <link href="https://cs.harvard.edu/malan/assets/styles.css?1710041339" rel="stylesheet">
-    <script src="https://cs.harvard.edu/malan/assets/bootstrap.bundle.min.js?1710041339"></script>
-    <script src="https://kit.fontawesome.com/952cba01f2.js" crossorigin="anonymous"></script>
-    <title>Zeynep YILDIZ</title>
+    <meta name="twitter:title" content="Zeynep YILDIZ - Jr. iOS Geliştirici">
+    <meta name="twitter:description" content="Zeynep YILDIZ, Jr. iOS Geliştiricisi. Güncel projeleri ve blog yazıları için takip edin.">
+    <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/1562897817689112576/pbeWfDXk_400x400.jpg">
+    <meta name="twitter:creator" content="@Z3YNAx">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://st2.depositphotos.com/3867453/8105/v/950/depositphotos_81057948-stock-illustration-letter-z-number-2-logo.jpg" type="image/x-icon">
+
+    <!-- Stil ve Script Dosyaları -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cs.harvard.edu/malan/assets/styles.css" rel="stylesheet">
+    <script src="https://cs.harvard.edu/malan/assets/bootstrap.bundle.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/952cba01f2.js" crossorigin="anonymous" defer></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1NJK8WE0K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-R1NJK8WE0K');
+    </script>
+
+    <!-- Özel Stil -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .social-icons a {
+            font-size: 24px;
+            margin-right: 15px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            transition: box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        
+        .dark-mode .project-card {
+            background-color: #444;
+            border-color: #555;
+        }
+        
+        .dark-mode .social-icons a {
+            color: #fff;
+        }
+        
+        .dark-mode .social-icons a:hover {
+            color: #007bff;
+        }
+        
+        #theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <aside class="col-md-5">
-            <h2 class="mb-1">
-                <a class="text-muted" href="/">anasayfa</a>
-            </h2>
-            <h1 class="mb-1"><a href="">Zeynep YILDIZ</a></h1>
-            <h2 class="mb-1 ps-md-5">Jr. iOS Geliştirici</h2>
-            <p class="mb-0">
-                <a class="text-emphasis" href="https://github.com/zeynep-yildiz" target="_blank"><i class="fab fa-github"></i></a>
-                <a class="text-emphasis" href="https://www.linkedin.com/in/zeynep-yildiz/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a class="text-emphasis" href="https://twitter.com/Z3YNAx" target="_blank"><i class="fab fa-twitter"></i></a>
-            </p>
-            <nav class="d-block mb-4 p-0 navbar navbar-expand-md navbar-light">
-                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="collapsed mt-3 navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
-                    <i class="fas fa-bars"></i>
-                </button>
-<!--                 <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="flex-column ms-md-auto mt-3 nav">
-                        <li class="nav-item">
-                            <a class="d-inline-block nav-link p-0" href="/blog/">Blog</a>
-                        </li>
-                    </ul>
-                </div> -->
-            </nav>
-        </aside>
-        <main class="col-md-7">
-            <figure class="figure">
-                <a href="https://devimages-cdn.apple.com/wwdc-services/articles/images/75828E8C-905D-4517-94F8-7799B785D5C7/2048.jpeg"><img alt="" class="figure-img img-fluid rounded" src="https://devimages-cdn.apple.com/wwdc-services/articles/images/75828E8C-905D-4517-94F8-7799B785D5C7/2048.jpeg" /></a>
-                <figcaption class="figure-caption text-end">
-                    WWDC22 Cover Image / Apple
-                </figcaption>
-            </figure>
-            <div class="mt-3">
-                <h5>Yaptığım çalışmalar</h5>
-                <dl>
-                    <a href="/fuelsense">FuelSense</a>
-                </dl>
-                <dl>
-                    <a href="/super-zikirmatik">Zikirmatik</a>
-                </dl>
+    <div class="container">
+        <div class="row">
+            <aside class="col-md-4">
+                <img src="https://pbs.twimg.com/profile_images/1562897817689112576/pbeWfDXk_400x400.jpg" alt="Zeynep YILDIZ" class="profile-image">
+                <h1 class="mb-1">Zeynep YILDIZ</h1>
+                <h2 class="mb-3">Jr. iOS Geliştirici</h2>
+                <p class="mb-3 social-icons">
+                    <a href="https://github.com/zeynep-yildiz" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/zeynep-yildiz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/Z3YNAx" target="_blank"><i class="fab fa-twitter"></i></a>
+                </p>
+            <!--                 
+                <nav class="mb-4">
+                    <a href="/" class="btn btn-outline-primary me-2">Anasayfa</a>
+                    <a href="/blog/" class="btn btn-outline-secondary">Blog</a>
+                </nav>
+                 -->
+            </aside>
+            <main class="col-md-8">
+<!--                 <section class="mb-5">
+                    <h3>Hakkımda</h3>
+                    <p></p>
+                </section> -->
+                <section class="mb-5">
+                    <h3>Projelerim</h3>
+                    <div class="project-list">
+                        <div class="project-card">
+                            <h4><a href="/fuelsense">FuelSense</a></h4>
+<!--                             <p>Proje açıklaması buraya gelecek.</p> -->
+                        </div>
+                        <div class="project-card">
+                            <h4><a href="/super-zikirmatik">Zikirmatik</a></h4>
+                        <!--<p>Proje açıklaması buraya gelecek.</p>-->
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Github'daki Son Projelerim</h3>
+                    <div id="proje-listesi" class="project-list"></div>
+                </section>
+            </main>
+        </div>
+        <footer class="pt-5 my-5 text-muted border-top">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Zeynep YILDIZ.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <button id="theme-toggle" class="btn btn-outline-primary">
+                        <i class="fas fa-moon"></i> Gece Modu
+                    </button>
+                </div>
             </div>
-            
-<!--             <dl>
-                <h5 class="mt-5">Bloğumdaki son yazılar</h5>
-                <dl id="basliklar-listesi"></dl>
-            </dl> -->
-
-            <div class="mt-3">
-                <h5>Github'daki son projelerim </h5>
-                <ul id="proje-listesi" class="list-unstyled ps-0"></ul>
-            </div>
-            
-        </main>
-        <footer class="pt-5 my-5 text-body-secondary border-top">
-           Zeynep YILDIZ - 2024 / Tasarım : David J. Malan
-          </footer>
+        </footer>
     </div>
-</div>
-<script>
-    // https://getbootstrap.com/docs/5.3/customize/color-modes/#javascript
-    /*!
-     * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
-     * Copyright 2011-2022 The Bootstrap Authors
-     * Licensed under the Creative Commons Attribution 3.0 Unported License.
-     */
-    (() => {
-      'use strict'
+    <script>
+        // https://getbootstrap.com/docs/5.3/customize/color-modes/#javascript
+        /*!
+         * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+         * Copyright 2011-2022 The Bootstrap Authors
+         * Licensed under the Creative Commons Attribution 3.0 Unported License.
+         */
+        (() => {
+          'use strict'
 
-      const storedTheme = localStorage.getItem('theme')
+          const storedTheme = localStorage.getItem('theme')
 
-      const getPreferredTheme = () => {
-        if (storedTheme) {
-          return storedTheme
-        }
+          const getPreferredTheme = () => {
+            if (storedTheme) {
+              return storedTheme
+            }
 
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-      }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+          }
 
-      const setTheme = function (theme) {
-        if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          document.documentElement.setAttribute('data-bs-theme', 'dark')
-        } else {
-          document.documentElement.setAttribute('data-bs-theme', theme)
-        }
-      }
+          const setTheme = function (theme) {
+            if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              document.documentElement.setAttribute('data-bs-theme', 'dark')
+            } else {
+              document.documentElement.setAttribute('data-bs-theme', theme)
+            }
+          }
 
-      setTheme(getPreferredTheme())
-
-      const showActiveTheme = theme => {
-        const activeThemeIcon = document.querySelector('.theme-icon-active use')
-        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-        const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
-
-        document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-          element.classList.remove('active')
-        })
-
-        btnToActive.classList.add('active')
-        activeThemeIcon.setAttribute('href', svgOfActiveBtn)
-      }
-
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-        if (storedTheme !== 'light' || storedTheme !== 'dark') {
           setTheme(getPreferredTheme())
-        }
-      })
 
-      window.addEventListener('DOMContentLoaded', () => {
-        showActiveTheme(getPreferredTheme())
+          const showActiveTheme = theme => {
+            const activeThemeIcon = document.querySelector('.theme-icon-active use')
+            const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+            const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
 
-        document.querySelectorAll('[data-bs-theme-value]')
-          .forEach(toggle => {
-            toggle.addEventListener('click', () => {
-              const theme = toggle.getAttribute('data-bs-theme-value')
-              localStorage.setItem('theme', theme)
-              setTheme(theme)
-              showActiveTheme(theme)
+            document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+              element.classList.remove('active')
             })
+
+            btnToActive.classList.add('active')
+            activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+          }
+
+          window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+            if (storedTheme !== 'light' || storedTheme !== 'dark') {
+              setTheme(getPreferredTheme())
+            }
           })
-      })
-    })()
 
-    function basliklariGetir() {
-        fetch('https://zeynepyildiz.website/blog/wp-json/wp/v2/posts')
-            .then(response => response.json())
-            .then(data => {
-                const basliklarListesi = document.getElementById('basliklar-listesi');
-                if (data.length === 0) {
-                    const mesaj = document.createElement('li');
-                    mesaj.textContent = "Şu anda bir içerik bulunamadı.";
-                    basliklarListesi.appendChild(mesaj);
-                } else {
-                    const gruplar = {};
+          window.addEventListener('DOMContentLoaded', () => {
+            showActiveTheme(getPreferredTheme())
 
-                    data.forEach(post => {
-                        const tarih = new Date(post.date);
-                        const ay = tarih.toLocaleDateString('tr-TR', { month: 'long' });
-                        const yil = tarih.getFullYear().toString();
+            document.querySelectorAll('[data-bs-theme-value]')
+              .forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                  const theme = toggle.getAttribute('data-bs-theme-value')
+                  localStorage.setItem('theme', theme)
+                  setTheme(theme)
+                  showActiveTheme(theme)
+                })
+              })
+          })
+        })()
 
-                        const kategori = ay + " " + yil;
-                        if (!gruplar[kategori]) {
-                            gruplar[kategori] = [];
-                        }
+        function basliklariGetir() {
+            fetch('https://zeynepyildiz.website/blog/wp-json/wp/v2/posts')
+                .then(response => response.json())
+                .then(data => {
+                    const basliklarListesi = document.getElementById('basliklar-listesi');
+                    if (data.length === 0) {
+                        const mesaj = document.createElement('li');
+                        mesaj.textContent = "Şu anda bir içerik bulunamadı.";
+                        basliklarListesi.appendChild(mesaj);
+                    } else {
+                        const gruplar = {};
 
-                        const baslik = post.title.rendered.replace(/&#8217;/g, "'");
-                        const baslikLinki = post.link;
+                        data.forEach(post => {
+                            const tarih = new Date(post.date);
+                            const ay = tarih.toLocaleDateString('tr-TR', { month: 'long' });
+                            const yil = tarih.getFullYear().toString();
 
-                        const yeniBaslik = document.createElement('li');
-                        const yeniLink = document.createElement('a');
+                            const kategori = ay + " " + yil;
+                            if (!gruplar[kategori]) {
+                                gruplar[kategori] = [];
+                            }
 
-                        yeniLink.href = baslikLinki;
-                        yeniLink.textContent = baslik;
-                        yeniLink.target = "_blank";
+                            const baslik = post.title.rendered.replace(/&#8217;/g, "'");
+                            const baslikLinki = post.link;
 
-                        yeniBaslik.appendChild(yeniLink);
-                        yeniBaslik.style.listStyleType = "square";
+                            const yeniBaslik = document.createElement('li');
+                            const yeniLink = document.createElement('a');
 
-                        gruplar[kategori].push(yeniBaslik);
-                    });
+                            yeniLink.href = baslikLinki;
+                            yeniLink.textContent = baslik;
+                            yeniLink.target = "_blank";
 
-                    Object.keys(gruplar).forEach(kategori => {
-                        const kategoriBasliklar = gruplar[kategori];
-                        const kategoriBaslikListesi = document.createElement('dl');
+                            yeniBaslik.appendChild(yeniLink);
+                            yeniBaslik.style.listStyleType = "square";
 
-                        kategoriBasliklar.forEach(baslik => {
-                            kategoriBaslikListesi.appendChild(baslik);
+                            gruplar[kategori].push(yeniBaslik);
                         });
 
-                        const kategoriBaslikGrubu = document.createElement('div');
-                        const kategoriBaslikGrubuBaslik = document.createElement('h5');
-                        kategoriBaslikGrubuBaslik.textContent = kategori;
+                        Object.keys(gruplar).forEach(kategori => {
+                            const kategoriBasliklar = gruplar[kategori];
+                            const kategoriBaslikListesi = document.createElement('dl');
 
-                        kategoriBaslikGrubu.appendChild(kategoriBaslikGrubuBaslik);
-                        kategoriBaslikGrubu.appendChild(kategoriBaslikListesi);
-                        basliklarListesi.appendChild(kategoriBaslikGrubu);
-                    });
-                }
-            })
-            .catch(error => console.error(error));
-    }
-    window.addEventListener('load', basliklariGetir);
+                            kategoriBasliklar.forEach(baslik => {
+                                kategoriBaslikListesi.appendChild(baslik);
+                            });
 
-    function projeleriGetir() {
-        fetch('https://api.github.com/users/zeynep-yildiz/repos')
-            .then(response => response.json())
-            .then(data => {
-                const projeListesi = document.getElementById('proje-listesi');
-                if (data.length === 0) {
-                    const mesaj = document.createElement('li');
-                    mesaj.textContent = "Şuanlık bir içerik bulunamadı.";
-                    projeListesi.appendChild(mesaj);
-                } else {
-                    data.forEach(repo => {
-                        const baslik = repo.name;
-                        const projeLinki = repo.html_url;
-                        const yeniProje = document.createElement('dl');
-                        const yeniLink = document.createElement('a');
-                        yeniLink.href = projeLinki;
-                        yeniLink.textContent = baslik;
-                        yeniLink.target = "_blank";
-                        yeniProje.appendChild(yeniLink);
-                        projeListesi.appendChild(yeniProje);
-                    });
-                }
-            })
-            .catch(error => console.error(error));
-    }
-    window.addEventListener('load', projeleriGetir);
-</script>
+                            const kategoriBaslikGrubu = document.createElement('div');
+                            const kategoriBaslikGrubuBaslik = document.createElement('h5');
+                            kategoriBaslikGrubuBaslik.textContent = kategori;
+
+                            kategoriBaslikGrubu.appendChild(kategoriBaslikGrubuBaslik);
+                            kategoriBaslikGrubu.appendChild(kategoriBaslikListesi);
+                            basliklarListesi.appendChild(kategoriBaslikGrubu);
+                        });
+                    }
+                })
+                .catch(error => console.error(error));
+        }
+        window.addEventListener('load', basliklariGetir);
+
+        function projeleriGetir() {
+            fetch('https://api.github.com/users/zeynep-yildiz/repos')
+                .then(response => response.json())
+                .then(data => {
+                    const projeListesi = document.getElementById('proje-listesi');
+                    // zeynep-yildiz.github.io projesini filtrele
+                    const filtrelenmisData = data.filter(repo => repo.name !== 'zeynep-yildiz.github.io');
+                    
+                    if (filtrelenmisData.length === 0) {
+                        const mesaj = document.createElement('div');
+                        mesaj.textContent = "Şuanlık bir içerik bulunamadı.";
+                        mesaj.className = "project-card";
+                        projeListesi.appendChild(mesaj);
+                    } else {
+                        filtrelenmisData.forEach(repo => {
+                            const projeCard = document.createElement('div');
+                            projeCard.className = "project-card";
+                            
+                            const baslik = document.createElement('h4');
+                            const link = document.createElement('a');
+                            link.href = repo.html_url;
+                            link.textContent = repo.name;
+                            link.target = "_blank";
+                            baslik.appendChild(link);
+                            
+                            projeCard.appendChild(baslik);
+                            
+                            if (repo.description) {
+                                const aciklama = document.createElement('p');
+                                aciklama.textContent = repo.description;
+                                projeCard.appendChild(aciklama);
+                            }
+                            
+                            projeListesi.appendChild(projeCard);
+                        });
+                    }
+                })
+                .catch(error => console.error(error));
+        }
+        window.addEventListener('load', projeleriGetir);
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+        const text = themeToggle.lastChild;
+
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                body.classList.add('dark-mode');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                text.textContent = ' Gündüz Modu';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.remove('dark-mode');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                text.textContent = ' Gece Modu';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Check for saved theme preference or use default
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        setTheme(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.classList.contains('dark-mode') ? 'light' : 'dark';
+            setTheme(currentTheme);
+        });
+    </script>
 </body>
 </html>
